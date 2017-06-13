@@ -1,0 +1,536 @@
+/* Universal Styles */
+
+html, body {
+  font-size: 24px;
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+a:hover {
+  color: rgb(8, 103, 236);
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1440px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: rgb(66, 61, 61);
+  margin: 0;
+}
+
+h2{
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.5;
+  color: rgb(66, 61, 61);
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: rgb(66, 61, 61);
+}
+
+/* Header */
+
+#colmar-logo {
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #423d3d;
+  margin: 0;
+}
+
+#academy-logo {
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #c5c1c1;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+header > * {
+  height 6.4rem;
+}
+
+header li {
+  display: inline;
+  padding-left: 1.6rem;
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: 500;
+}
+
+.logo span {
+  color: rgb(197, 193, 193);
+  font-weight: 300;
+}
+
+.banner {
+  position: relative;
+  max-width: 100%;
+  top: 64px;
+  background-color: rgb(236, 237, 239);
+}
+
+#image-container {
+  margin: 32px 24px;
+  overflow: hidden;
+}
+
+#image-container-large img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.feature-details {
+  font-size: 1.25rem;
+  color: rgb(66, 61, 61);
+  line-height: 1.4;
+  margin: 0 1.5rem;
+}
+
+#image-container-large {
+  margin: 32px 24px;
+  overflow: hidden;
+}
+
+.image-container-large {
+  margin: 32px 24px;
+  overflow: hidden;
+  width: 59%;
+}
+
+.image-container-large img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.image-container {
+  margin: 32px 24px;
+  width: 59%%;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.info-img {
+  padding: 1rem;
+  width: 35%;
+}
+
+.banner h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+ .mobile {
+   display: none;
+ }
+
+nav.mobile-nav {
+  display: none;
+}
+
+.banner .image-container {
+  margin: 0;
+  width: auto;
+  height: 260px;
+}
+.banner-details {
+  max-width: 100%;
+  margin: 32px 16px;
+  margin-bottom: 1rem;
+}
+.banner-content {
+  margin: 0 auto;
+  text-align:left;
+}
+.banner-content h1 {
+  line-height: 1.2;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.banner-content h3 {
+  width: 100%;
+  margin-top: 0;
+}
+/*banner a.button {
+  width: 100%;*/
+}
+}
+
+/* Learn Something */
+
+.banner-content {
+  display: inline-block;
+  width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.banner-content h1 {
+  width: 80%;
+}
+
+.banner-content h3 {
+  width: 70%;
+}
+
+.banner button {
+      background-color: #423d3d; /* Dark Grey */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+
+.banner-container {
+  max-width: 100%;
+  align-items: center;
+}
+
+.banner img {
+  margin-bottom: -3px;
+  width: 100%;
+}
+
+.header li .banner button {
+  font-size: 1.4rem;
+}
+
+.banner .image-container {
+  margin: 0;
+  width: auto;
+  height: 260px;
+}
+
+.banner-details {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  margin: 32px 16px;
+}
+
+/* Practice */
+
+.information {
+  top: 64px;
+  max-width: 100%;
+  position: relative;
+  background-color: rgb(197, 193, 193);
+}
+
+.feature-container {
+  flex-direction: column;
+  display: inline-flex;
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.side-info-desktop {
+  flex-direction: column;
+  display: inline-flex;
+  width: 40%;
+  border-left: 1px solid rgb(197, 193, 193);
+}
+
+.side-info-mobile {
+  display: none;
+}
+
+.info-container {
+  margin-top: 16px;
+  margin-bottom: 75px;
+}
+
+.info {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(197, 193, 193);
+}
+
+.info:hover {
+  background-color: rgb(197, 193, 193);
+}
+
+.info img {
+  padding: 1rem;
+  width: 35%;
+}
+
+.info-content {
+  flex-direction: column;
+}
+
+.info-content h3 {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-content span {
+  color: rgb(66, 61, 61);
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.info-content a {
+  font-weight: 700;
+}
+
+.info-card-container {
+  margin-top: 16px;
+  margin-bottom: 75px;
+}
+
+@media only screen and (max-width: 768px)
+.info-card-container {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .side-info-desktop {
+    width: 100%;
+  }
+  .info-card-container {
+    margin-top: 0;
+  }
+  .info {
+    display: block;
+    -webkit-transition: none;
+    transition: none;
+    padding: 32px 16px;
+  }
+  .info img {
+    display: none;
+  }
+  .info img.mobile {
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .info-content {
+    /*width: 90%;
+    margin: 16px;*/
+  }
+  .info-content span {
+    font-size: 1.5rem;
+  }
+  .info:hover {
+    background-color: rgb(243, 245, 245);
+  }
+}
+
+/* Start Learning */
+
+.start-learning {
+  width: 100%;
+  top: 64px;
+  position: relative;
+  background-color: rgb(236, 237, 239);
+}
+
+.class-container {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.class {
+  width: 370px;
+  margin-right: 32px;
+  margin-bottom: 2rem;
+  background-color: white;
+  flex-direction: column;
+}
+
+.class-content {
+  padding: 0 0 3rem 1.5rem;
+}
+
+.class-content .category {
+  display: block;
+  text-transform: uppercase;
+}
+
+.class-content span {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(66, 61, 61);
+}
+
+.start-learning h2 {
+  text-align: center;
+  margin: 64px;
+}
+
+.class-container:last-child {
+  margin-right: 0rem;
+}
+
+.class .photo {
+  margin-bottom: 1rem;
+  height: auto;
+  width: 100%;
+}
+
+/* Thesis Exhibit */
+
+.thesis {
+  top: 64px;
+  max-width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+
+.thesis h2 {
+  text-align: center;
+  margin: 64px auto 64px auto;
+}
+
+.thesis-content {
+  width: 60%;
+  display: inline-flex;
+  color: rgb(66, 61, 61);
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+}
+
+.video-container {
+  overflow: hidden;
+  margin: 16px 16px 24px 24px;
+}
+
+.thesis-details {
+  margin: 0 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.info {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(197, 193, 193);
+}
+
+.info-content {
+  flex-direction: column;
+}
+
+#side-info-desktop {
+  border-left: none;
+}
+
+#info {
+  border-bottom: none;
+}
+
+.side-info-desktop {
+  width: 40%;
+  display: inline-flex;
+  flex-direction: column;
+  border-left: 1px solid rgb(197, 193, 193);
+}
+
+.info-content h3 {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-content span {
+  font-size: 1.125rem;
+  color: rgb(66, 61, 61);
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(236, 237, 239);
+  color: #423d3d;
+  position: relative;
+  top: 64px;
+  height: 110px;
+  max-width: 100%;
+  border-top: 1px solid #c5c1c1;
+}
+
+.copyright {
+  margin: 24px;
+  text-align: left;
+  display: inline-block;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.terms {
+  margin: 24px;
+  display: inline-block;
+  text-align: right;
+}
+
+.terms a {
+  color: #423d3d;
+  padding-right: 1rem;
+}
