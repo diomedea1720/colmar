@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html, body {
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
   font-weight: normal;
   margin: 0;
@@ -16,6 +16,11 @@ div {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(17, 89, 230);
+}
+
 a:hover {
   color: rgb(8, 103, 236);
   text-decoration: none;
@@ -27,7 +32,7 @@ a:hover {
 
 .main {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: auto;
   justify-content: center;
   flex-direction: column;
 }
@@ -61,6 +66,51 @@ h3 {
   color: rgb(66, 61, 61);
 }
 
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  header .mobile-nav {
+    display: inline-flex;
+    width: 100%;
+  }
+  .header-container {
+    justify-content: center;
+  }
+  header .mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  header .mobile-nav ul {
+    padding-left: 0;
+    margin-right: 0;
+  }
+  header .mobile-nav ul li {
+    padding-right: 0;
+  }
+  header .mobile-nav ul li a {
+    margin-left: 0;
+  }
+  nav.desktop-nav {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner-content h3 {
+    width: 90%;
+  }
+  .banner-details {
+    max-width: 100%;
+  }
+}
+
+
+
 /* Header */
 
 #colmar-logo {
@@ -79,9 +129,10 @@ h3 {
   margin: 0;
 }
 
-.header {
-  display: flex;
+.header-container {
   align-items: center;
+  max-width: auto;
+  margin: 0 auto;
 }
 
 header > * {
@@ -95,8 +146,10 @@ header li {
 }
 
 .logo {
-  display: flex;
   align-items: center;
+  margin-left: 24px;
+  flex-grow: 1;
+  display: inline-flex;
 }
 
 .logo h1 {
@@ -181,6 +234,30 @@ nav.mobile-nav {
   display: none;
 }
 
+nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+}
+
+nav li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+nav li:last-child {
+  padding-right: 0;
+}
+
+ul li a {
+  font-family: 'Teko', 'Open Sans', 'Helvetica', sans-serif;
+}
+
+ul li a:hover {
+  font-weight: 600;
+}
+
 .banner .image-container {
   margin: 0;
   width: auto;
@@ -207,6 +284,10 @@ nav.mobile-nav {
 /*banner a.button {
   width: 100%;*/
 }
+}
+
+nav.desktop-nav {
+  display: none;
 }
 
 /* Learn Something */
@@ -272,7 +353,7 @@ nav.mobile-nav {
   top: 64px;
   max-width: 100%;
   position: relative;
-  background-color: rgb(197, 193, 193);
+  background-color: white;
 }
 
 .feature-container {
@@ -286,7 +367,6 @@ nav.mobile-nav {
   flex-direction: column;
   display: inline-flex;
   width: 40%;
-  border-left: 1px solid rgb(197, 193, 193);
 }
 
 .side-info-mobile {
@@ -323,14 +403,14 @@ nav.mobile-nav {
   margin-bottom: 0.5rem;
 }
 
-.info-content span {
+.info-conte.nt span {
   color: rgb(66, 61, 61);
   font-size: 1.125rem;
   margin-bottom: 1rem;
 }
 
 .info-content a {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .info-card-container {
@@ -341,6 +421,11 @@ nav.mobile-nav {
 @media only screen and (max-width: 768px)
 .info-card-container {
   margin-top: 0;
+}
+
+@media only screen and (max-width: 768px)
+.info img {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -366,8 +451,8 @@ nav.mobile-nav {
     padding: 0;
   }
   .info-content {
-    /*width: 90%;
-    margin: 16px;*/
+    width: 90%;
+    margin: 16px;
   }
   .info-content span {
     font-size: 1.5rem;
@@ -433,6 +518,11 @@ nav.mobile-nav {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px)
+.course-card-content {
+  padding: 16px;
+}
+
 /* Thesis Exhibit */
 
 .thesis {
@@ -453,12 +543,17 @@ nav.mobile-nav {
   color: rgb(66, 61, 61);
   flex-direction: column;
   margin-bottom: 2rem;
-
 }
 
-.video-container {
+.video-container-large {
   overflow: hidden;
   margin: 16px 16px 24px 24px;
+}
+
+.video-container-large video {
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .thesis-details {
@@ -472,6 +567,7 @@ nav.mobile-nav {
   align-items: center;
   width: 100%;
   border-bottom: 1px solid rgb(197, 193, 193);
+  transition: color 200ms linear;
 }
 
 .info-content {
